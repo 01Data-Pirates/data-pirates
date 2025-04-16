@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Medicinal Prescription Prediction System
 
 This project implements a Machine Learning-based system that predicts diseases based on symptoms and suggests appropriate medications.
