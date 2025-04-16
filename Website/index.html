@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Disease Detector</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Skin Disease Detector</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#help">Need Help?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#consultant">Contact Nearest Consultant</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">Upload Skin Image for Analysis</h2>
+                        
+                        <div class="upload-area" id="uploadArea">
+                            <div class="upload-content text-center">
+                                <img src="" alt="" id="previewImage" class="preview-image">
+                                <div id="uploadPrompt">
+                                    <i class="upload-icon">📁</i>
+                                    <p>Drag and drop your image here or click to upload</p>
+                                </div>
+                            </div>
+                            <input type="file" id="fileInput" accept="image/*" class="file-input">
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button class="btn btn-primary" id="analyzeBtn" disabled>
+                                Analyze Image
+                            </button>
+                        </div>
+
+                        <div id="resultArea" class="mt-4" style="display: none;">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Analysis Result</h5>
+                                    <p class="card-text" id="predictionResult"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
