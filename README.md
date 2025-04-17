@@ -163,7 +163,5 @@ Final Case Set/
 - Model Development Team
 - Frontend Development Team
 - UX/UI Design Team
-- Medical Advisors
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details. 
+
